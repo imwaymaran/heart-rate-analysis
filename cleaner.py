@@ -2,10 +2,10 @@ def filter_nondigits(data: list) -> list:
     """Filters out non-numeric strings from the input list and returns a list of integers.
 
     Args:
-        data (list): A list of strings, where some may contain non-numeric characters.
+        data (list[int]): list of strings, where some may contain non-numeric characters.
 
     Returns:
-        list: A list containing only the numeric values from the input, converted to integers.
+        list: list containing only the numeric values from the input, converted to integers.
         
     Usage examples:
         >>> filter_nondigits(["10", "20", "30"])
