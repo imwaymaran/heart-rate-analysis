@@ -76,6 +76,12 @@ def standard_deviation(data: list) -> float:
 
     Returns:
         float: a floating point value representing the standard deviation of this list.
+        
+    Usage examples:
+        >>> standard_deviation([10, 20, 30])
+        8.16
+        >>> standard_deviation([5, 5, 5, 5])
+        0.0
     """
     if not data:
         return []
