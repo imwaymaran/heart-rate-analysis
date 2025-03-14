@@ -19,22 +19,24 @@ def run(filename: str) -> None:
 
     Returns:
         float, float, float: You will return the average, max, and standard deviation
-    """ 
+    """
     data = []
 
     # open file using file I/O and read it into the `data` list
-    ...
+    with open(filename, "r") as file:
+        for line in file:
+            data.append(line)
 
     # Use `filter_nondigits` to clean the data and remove invalid entries, save the output to a new variable
-    ...
+    filtered_data = filter_nondigits(data)
 
     # plot this data to explore changes in heart rate for this file, save this visualization to the "images" folder
     ...
 
     # calculate the average, maximum, and standard deviation of this file using the functions you've wrote
-    avg_hr = ...
-    max_hr = ...
-    std_dev_hr = ...
+    avg_hr = average(filtered_data)
+    max_hr = maximum(filtered_data)
+    std_dev_hr = standard_deviation(filtered_data)
 
     # return all 3 values
     return avg_hr, max_hr, std_dev_hr
