@@ -69,15 +69,15 @@ def variance(data: list) -> float:
 
 
 def standard_deviation(data: list) -> float:
-    """_summary_
+    """Calculates the standard deviation of the list.
 
     Args:
         data (list[int]): list of integers representing heart rate samples.
 
     Returns:
-        float: _description_
+        float: a floating point value representing the standard deviation of this list.
     """
     if not data:
         return []
     
-    return round((variance(data)) **0.5, 2)
+    return round(variance(data) ** 0.5, 2)
