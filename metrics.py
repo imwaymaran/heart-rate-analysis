@@ -1,6 +1,5 @@
 def average(data: list) -> float:
-    """
-    Calculates average value of the list.
+    """Calculates average value of the list.
 
     Args:
         data (list[int]): list of integers representing heart rate samples.
@@ -23,10 +22,25 @@ def average(data: list) -> float:
 
 
 def maximum(data: list) -> float:
+    """Calculates maximum value of the list
+
+    Args:
+        data (list[int]): list of integers representing heart rate samples.
+
+    Returns:
+        float: a floating point value representing the maximum of this list. 
+        
+    Usage examples:
+        >>> maximum([80, 90, 100])
+        100.0
+
+        >>> maximum([60, 75, 90, 105])
+        105.0
     """
-    INSERT DOCSTRING HERE
-    """
-    pass
+    if not data:
+        return []
+    
+    return float(max(data))
 
 
 def variance(data: list) -> float:
