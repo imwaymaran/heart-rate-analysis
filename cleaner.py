@@ -1,5 +1,6 @@
 def filter_nondigits(data: list) -> list:
-    """Filters out non-numeric strings from the input list and returns a list of integers.
+    """
+    Filters out non-numeric strings from the input list and returns a list of integers.
 
     Args:
         data (list[int]): list of strings, where some may contain non-numeric characters.
