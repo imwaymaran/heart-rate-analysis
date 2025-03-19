@@ -10,7 +10,7 @@ def heart_rate_plot(data: list, filename: str):
         filename (str): the file path from which the heart rate data was extracted.
 
     Returns:
-        None: The function saves the plot as an image and does not return any value.
+        None: the function saves the plot as an image and does not return any value.
 
     Example:
         >>> heart_rate_plot([72, 75, 78, 80, 76], "data/phase0.txt")
