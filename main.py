@@ -5,8 +5,7 @@ perform comprehensive analysis
 
 from metrics import average, maximum, standard_deviation
 from cleaner import filter_nondigits
-
-import matplotlib.pyplot as plt
+from visualize import heart_rate_plot
 
 
 def run(filename: str) -> None:
@@ -15,10 +14,10 @@ def run(filename: str) -> None:
     and save visualizations.
 
     Args:
-        filename (str): The path to the data file (e.g., 'data/phase0.txt').
+        filename (str): the path to the data file (e.g., 'data/phase0.txt').
 
     Returns:
-        float, float, float: You will return the average, max, and standard deviation
+        float, float, float: the average, max, and standard deviation.
     """
     data = []
 
@@ -31,7 +30,7 @@ def run(filename: str) -> None:
     filtered_data = filter_nondigits(data)
 
     # plot this data to explore changes in heart rate for this file, save this visualization to the "images" folder
-    ...
+    heart_rate_plot(filtered_data, filename)
 
     # calculate the average, maximum, and standard deviation of this file using the functions you've wrote
     avg_hr = average(filtered_data)
