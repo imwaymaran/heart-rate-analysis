@@ -88,4 +88,6 @@ def standard_deviation(data: list) -> float:
     if not data:
         return []
     
-    return round(variance(data) ** 0.5, 2)
+    var = variance(data)
+    std = var ** 0.5
+    return round(std, 2)
