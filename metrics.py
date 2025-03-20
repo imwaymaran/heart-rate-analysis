@@ -18,7 +18,12 @@ def average(data: list) -> float:
     if not data:
         return []
     
-    average = sum(data) / len(data)
+    total = 0
+    for val in data:
+        total += val
+        
+    average = total / len(data)
+    
     return round(average, 2)
 
 
@@ -42,7 +47,13 @@ def maximum(data: list) -> int:
     if not data:
         return []
     
-    return max(data)
+    max_val = data[0]
+    
+    for val in data:
+        if val > max_val:
+            max_val = val
+    
+    return max_val
 
 
 def variance(data: list) -> float:
