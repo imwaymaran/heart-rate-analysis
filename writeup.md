@@ -54,7 +54,7 @@ Based on the findings from the dataset, I believe that **Phase0** perfectly fits
    - As we can see from the **Phase0 plot**, the heart rate is **higher at the beginning of the recording** and then **gradually decreases**, becoming **more stable and less variable** over time.  
    - This pattern suggests that the participant was likely **falling asleep**, transitioning from an active or awake state to a restful sleeping phase.  
 
-### **Phase0 (Sleep Phase)**
+#### **Plot: Phase0 (Sleep Phase)**
 
 ![Phase0 Sleep Plot](images/phase0.png)
 
@@ -77,13 +77,11 @@ Based on the findings, **Phase2** most likely corresponds to periods of exercise
 3. **Higher Standard Deviation (13.38 in Phase2):**  
    - A high standard deviation indicates greater variability in heart rate, which is typical during exercise.
 
-#### Phase1 (Moderate Exercise)
+#### **Plot: Phase1 (Moderate Exercise)**
 
 ![Phase1 Plot](images/phase1.png)
 
----
-
-#### Phase2 (Intense Exercise)
+#### **Plot: Phase2 (Intense Exercise)**
 
 ![Phase2 Plot](images/phase2.png)
 
@@ -111,6 +109,6 @@ Based on the findings, **Phase3** most likely corresponds to periods of **awake,
    - The plot for **Phase3** shows a moderate level of fluctuation, with no extreme spikes like in the exercise phases (**Phase1 & Phase2**).  
    - The data suggests the participant was awake and likely engaging in low-intensity activities.  
 
-### **Plot: Phase3 (Awake Activity)**  
+#### **Plot: Phase3 (Awake Activity)**  
 
 ![Phase3 Plot](images/phase3.png)
